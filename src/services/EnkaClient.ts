@@ -18,6 +18,6 @@ export function getAllChatactersFromEnka() {
   return enka.getAllCharacters();
 }
 
-export function getCharacterByEnkaId(enkaId: number) {
-  return enka.getCharacterById(enkaId);
+export function getCharacterByEnkaId(enkaId: number, skillDepotId: number) {
+  return enka.getCharacterById(enkaId, skillDepotId);
 }

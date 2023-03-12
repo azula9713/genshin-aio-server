@@ -1,33 +1,47 @@
-import { CharacterData, Costume } from "enka-network-api";
+import {
+  CharacterData,
+  ElementalBurst,
+  ElementalSkill,
+} from "enka-network-api";
 import { Request, Response } from "express";
-import { GetCharacterEnkaIdInput } from "../schemas/enkaCharacter.schema";
 
+import { GetCharacterEnkaIdInput } from "../schemas/enkaCharacter.schema";
 import {
   getAllChatactersFromEnka,
   getCharacterByEnkaId,
 } from "../services/EnkaClient";
+import {
+  decryptTextAsset,
+  mapAbility,
+  mapConstellations,
+  mapCostumes,
+  mapPassiveTalents,
+  mapSkills,
+} from "../utils/EnkaAssetMapper";
 
 import logger from "../utils/logger";
 
 export const getAllCharacters = async (req: Request<{}, {}>, res: Response) => {
   try {
-    let characters: any[] = [];
+    // let characters: any[] = [];
     const response: CharacterData[] = getAllChatactersFromEnka();
 
-    response.forEach((character) => {
-      characters.push({
-        id:
-          character._nameId + character.element?.name.get("en") + character.id,
-        enkaId: character.id,
-        name: character.name.get("en"),
+    const characters = response.map((character) => {
+      const { _nameId, id, rarity, icon, element, skillDepotId } = character;
+
+      return {
+        id: skillDepotId + _nameId + id,
+        enkaId: id,
+        name: decryptTextAsset(character.name),
         nameId: character._nameId,
-        rarity: character.rarity,
-        iconUrl: character.icon.url,
+        rarity,
+        iconUrl: icon.url,
         element: {
-          id: character.element?.id,
-          name: character.element?.name.get("en"),
+          id: element?.id,
+          name: decryptTextAsset(element?.name),
         },
-      });
+        skillDepotId,
+      };
     });
 
     res.send(characters);
@@ -37,66 +51,58 @@ export const getAllCharacters = async (req: Request<{}, {}>, res: Response) => {
 };
 
 export const getCharacterById = async (
-  req: Request<GetCharacterEnkaIdInput["params"]>,
+  req: Request<{}, {}, GetCharacterEnkaIdInput["query"]>,
   res: Response
 ) => {
-  const { enkaId } = req.params;
+  const { enkaSkillDepotId, enkaId } = req.query;
 
   try {
-    let character = {};
-    let costumes: any = [];
-    let skills: any = [];
+    const characterData: CharacterData = getCharacterByEnkaId(
+      Number(enkaId),
+      Number(enkaSkillDepotId)
+    );
 
-    const response: CharacterData = getCharacterByEnkaId(parseInt(enkaId));
+    const skills = mapSkills(characterData.skills);
+    const passiveTalents = mapPassiveTalents(characterData.passiveTalents);
+    const constellations = mapConstellations(characterData.constellations);
+    const costumes = mapCostumes(characterData.costumes);
 
-    response.skills.forEach((skill) => {
-      skills.push({
-        id: skill.id,
-        name: skill.name.get("en"),
-        descriprion: skill.description.get("en"),
-        icon: skill.icon?.url,
-      });
-    });
+    const {
+      id,
+      _nameId: nameId,
+      description,
+      element,
+      splashImage: { url: splashImageUrl } = {},
+      rarity,
+      stars,
+      skillDepotId,
+    } = characterData;
 
-    response.costumes.forEach((costume) => {
-      costumes.push({
-        id: costume.id,
-        name: costume.name.get("en"),
-        url: costume.splashImage?.url,
-      });
-    });
-
-    character = {
-      id: response.id,
-      nameId: response._nameId,
-      descriptions: response.description.get("en"),
+    const character = {
+      id,
+      nameId,
+      description: decryptTextAsset(description),
       element: {
-        id: response.element?.id,
-        name: response.element?.name.get("en"),
+        id: element?.id,
+        name: decryptTextAsset(element?.name),
       },
-      splashImage: response.splashImage.url,
-      rarity: response.rarity,
-      stars: response.stars,
+      splashImageUrl,
+      rarity,
+      stars,
       costumes,
-      skillDepotId: response.skillDepotId,
+      skillDepotId,
       skills,
-      elementalSkill: {
-        id: response.elementalSkill?.id,
-        name: response.elementalSkill?.name.get("en"),
-        description: response.elementalSkill?.description.get("en"),
-        icon: response.elementalSkill?.icon.url,
-        maxCharge: response.elementalSkill?.maxCharge,
-        cooldown: response.elementalSkill?.cooldown,
-      },
-      elementalBurst: {
-        id: response.elementalBurst?.id,
-        name: response.elementalBurst?.name.get("en"),
-        description: response.elementalBurst?.description.get("en"),
-        icon: response.elementalBurst?.icon.url,
-        maxCharge: response.elementalBurst?.maxCharge,
-        cooldown: response.elementalBurst?.cooldown,
-      },
+      passiveTalents,
+      constellations,
+      elementalSkill: mapAbility(
+        characterData.elementalSkill as ElementalSkill
+      ),
+      elementalBurst: mapAbility(
+        characterData.elementalBurst as ElementalBurst
+      ),
+      normalAttack: mapAbility(characterData.normalAttack),
     };
+
     res.send(character);
   } catch (error) {
     logger.error(error);
