@@ -9,7 +9,6 @@ export const getWeaponsForAllCharacters = async (
   res: Response
 ) => {
   try {
-    // let characters: any[] = [];
     const response: WeaponData[] = getAllWeaponsFromEnka();
 
     const weapons = response.map((weapon) => {

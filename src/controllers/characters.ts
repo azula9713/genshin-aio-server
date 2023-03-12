@@ -95,6 +95,11 @@ export const getCharacterById = async (
       id,
       name: decryptTextAsset(name),
       nameId,
+      affiliation: decryptTextAsset(characterData.details?.location),
+      constellation:
+        nameId === "Zhongli"
+          ? "Lapis De"
+          : decryptTextAsset(characterData.details?.constellation),
       description: decryptTextAsset(description),
       weapon: weaponDetails[characterData.skillDepotId],
       element: {
