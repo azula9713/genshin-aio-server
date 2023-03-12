@@ -18,12 +18,21 @@ import {
   mapPassiveTalents,
   mapSkills,
 } from "../utils/EnkaAssetMapper";
+import CharacterWeaponData from "../static/WeaponData.json";
 
 import logger from "../utils/logger";
 
+interface AllCharacterWeaponData {
+  [key: string]: {
+    weaponType: string;
+    signatureWeapon: number;
+    name: string;
+    icon: string;
+  };
+}
+
 export const getAllCharacters = async (req: Request<{}, {}>, res: Response) => {
   try {
-    // let characters: any[] = [];
     const response: CharacterData[] = getAllChatactersFromEnka();
 
     const characters = response.map((character) => {
@@ -56,6 +65,9 @@ export const getCharacterById = async (
 ) => {
   const { enkaSkillDepotId, enkaId } = req.query;
 
+  const weaponDetails: AllCharacterWeaponData =
+    CharacterWeaponData.allCharacterWeaponData;
+
   try {
     const characterData: CharacterData = getCharacterByEnkaId(
       Number(enkaId),
@@ -69,6 +81,7 @@ export const getCharacterById = async (
 
     const {
       id,
+      name,
       _nameId: nameId,
       description,
       element,
@@ -80,12 +93,15 @@ export const getCharacterById = async (
 
     const character = {
       id,
+      name: decryptTextAsset(name),
       nameId,
       description: decryptTextAsset(description),
+      weapon: weaponDetails[characterData.skillDepotId],
       element: {
         id: element?.id,
         name: decryptTextAsset(element?.name),
       },
+      // weaponType: characterData.
       splashImageUrl,
       rarity,
       stars,

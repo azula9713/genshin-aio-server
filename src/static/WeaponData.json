@@ -1,0 +1,412 @@
+{
+  "allCharacterWeaponData": {
+    "3801": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11415,
+      "name": "Cinnabar Spindle",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Opus.png"
+    },
+    "7801": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11512,
+      "name": "Light of Foliar Incision",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Ayus.png"
+    },
+    "6201": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15509,
+      "name": "Thundering Pulse",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Narukami.png"
+    },
+    "2101": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15502,
+      "name": "Amos' Bow",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Amos.png"
+    },
+    "5701": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12510,
+      "name": "Redhorn Stonethresher",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Itadorimaru.png"
+    },
+    "1401": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14501,
+      "name": "Skyward Atlas",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Dvalin.png"
+    },
+    "2401": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12502,
+      "name": "Wolf's Gravestone",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Wolfmound.png"
+    },
+    "3201": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11509,
+      "name": "Mistsplitter Reforged",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Narukami.png"
+    },
+    "7201": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13407,
+      "name": "Favonius Lance",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Zephyrus.png"
+    },
+    "3601": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12502,
+      "name": "Wolf's Gravestone",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Wolfmound.png"
+    },
+    "6701": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15503,
+      "name": "Elegy for the End",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Widsith.png"
+    },
+    "7101": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13511,
+      "name": "Staff of the Scarlet Sands",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Deshret.png"
+    },
+    "7901": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12511,
+      "name": "Beacon of the Reed Sea",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Deshret.png"
+    },
+    "1601": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12510,
+      "name": "Redhorn Stonethresher",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Itadorimaru.png"
+    },
+    "3901": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15401,
+      "name": "Favonius Warbow",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Zephyrus.png"
+    },
+    "6801": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12401,
+      "name": "Favonius Greatsword",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Zephyrus.png"
+    },
+    "5101": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12503,
+      "name": "Song of Broken Pines",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Widsith.png"
+    },
+    "7601": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15401,
+      "name": "Favonius Warbow",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Zephyrus.png"
+    },
+    "3101": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15507,
+      "name": "Polar Star",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Worldbane.png"
+    },
+    "3701": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15511,
+      "name": "Hunter's Path",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Ayus.png"
+    },
+    "5501": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15401,
+      "name": "Favonius Warbow",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Zephyrus.png"
+    },
+    "4601": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13501,
+      "name": "Staff of Homa",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Homa.png"
+    },
+    "301": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11505,
+      "name": "Primordial Jade Cutter",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Morax.png"
+    },
+    "4701": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11503,
+      "name": "Freedom-Sworn",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Widsith.png"
+    },
+    "1501": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11509,
+      "name": "Mistsplitter Reforged",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Narukami.png"
+    },
+    "201": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11509,
+      "name": "Mistsplitter Reforged",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Narukami.png"
+    },
+    "6601": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11510,
+      "name": "Haran Geppaku Futsu",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Amenoma.png"
+    },
+    "4201": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11505,
+      "name": "Primordial Jade Cutter",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Morax.png"
+    },
+    "2901": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14402,
+      "name": "The Widsith",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Troupe.png"
+    },
+    "5601": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15501,
+      "name": "Skyward Harp",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Dvalin.png"
+    },
+    "6501": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11503,
+      "name": "Freedom-Sworn",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Widsith.png"
+    },
+    "7401": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11511,
+      "name": "Key of Khaj-Nisut",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Deshret.png"
+    },
+    "601": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14509,
+      "name": "Kagura's Verity",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Narukami.png"
+    },
+    "8001": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13501,
+      "name": "Staff of Homa",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Homa.png"
+    },
+    "4101": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14402,
+      "name": "The Widsith",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Troupe.png"
+    },
+    "7301": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14511,
+      "name": "A Thousand Floating Dreams",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Ayus.png"
+    },
+    "7001": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11511,
+      "name": "Key of Khaj-Nisut",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Deshret.png"
+    },
+    "2701": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14502,
+      "name": "Lost Prayer to the Sacred Winds",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Fourwinds.png"
+    },
+    "3401": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12510,
+      "name": "Redhorn Stonethresher",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Itadorimaru.png"
+    },
+    "3501": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11403,
+      "name": "Sacrificial Sword",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Fossil.png"
+    },
+    "5201": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13509,
+      "name": "Engulfing Lightning",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Narukami.png"
+    },
+    "2001": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12502,
+      "name": "Wolf's Gravestone",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Wolfmound.png"
+    },
+    "4501": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13511,
+      "name": "Staff of the Scarlet Sands",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Deshret.png"
+    },
+    "5401": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14302,
+      "name": "Thrilling Tales of Dragon Slayers",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Pulpfic.png"
+    },
+    "5301": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12502,
+      "name": "Wolf's Gravestone",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Wolfmound.png"
+    },
+    "6301": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13507,
+      "name": "Calamity Queller",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Santika.png"
+    },
+    "5901": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14509,
+      "name": "Kagura's Verity",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Narukami.png"
+    },
+    "4301": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14511,
+      "name": "A Thousand Floating Dreams",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Ayus.png"
+    },
+    "3301": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15507,
+      "name": "Polar Star",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Worldbane.png"
+    },
+    "5001": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13414,
+      "name": "Kitain Cross Spear",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Bakufu.png"
+    },
+    "6901": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15511,
+      "name": "Hunter's Path",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Ayus.png"
+    },
+    "504": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15511,
+      "name": "Hunter's Path",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Ayus.png"
+    },
+    "507": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11401,
+      "name": "Favonius Sword",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Zephyrus.png"
+    },
+    "706": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11505,
+      "name": "Primordial Jade Cutter",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Morax.png"
+    },
+    "708": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11503,
+      "name": "Freedom-Sworn",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Widsith.png"
+    },
+    "2201": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15503,
+      "name": "Elegy for the End",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Widsith.png"
+    },
+    "7501": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14512,
+      "name": "Tulaytullah's Remembrance",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Alaya.png"
+    },
+    "2301": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13511,
+      "name": "Staff of the Scarlet Sands",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Deshret.png"
+    },
+    "2601": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13505,
+      "name": "Primordial Jade Winged-Spear",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Morax.png"
+    },
+    "2501": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11505,
+      "name": "Primordial Jade Cutter",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Morax.png"
+    },
+    "4401": {
+      "weaponType": "WEAPON_CLAYMORE",
+      "signatureWeapon": 12510,
+      "name": "Redhorn Stonethresher",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_Itadorimaru.png"
+    },
+    "5801": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14509,
+      "name": "Kagura's Verity",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Narukami.png"
+    },
+    "4801": {
+      "weaponType": "WEAPON_CATALYST",
+      "signatureWeapon": 14501,
+      "name": "Skyward Atlas",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Dvalin.png"
+    },
+    "7701": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13511,
+      "name": "Staff of the Scarlet Sands",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Deshret.png"
+    },
+    "6001": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15508,
+      "name": "Aqua Simulacra",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Kirin.png"
+    },
+    "4901": {
+      "weaponType": "WEAPON_BOW",
+      "signatureWeapon": 15509,
+      "name": "Thundering Pulse",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Narukami.png"
+    },
+    "6401": {
+      "weaponType": "WEAPON_SWORD_ONE_HAND",
+      "signatureWeapon": 11401,
+      "name": "Favonius Sword",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Zephyrus.png"
+    },
+    "3001": {
+      "weaponType": "WEAPON_POLE",
+      "signatureWeapon": 13501,
+      "name": "Staff of Homa",
+      "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Homa.png"
+    }
+  }
+}

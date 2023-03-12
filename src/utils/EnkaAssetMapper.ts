@@ -11,7 +11,11 @@ import {
 import { LanguageCode } from "enka-network-api/types/client/CachedAssetsManager";
 
 const decryptTextAsset = (param: TextAssets | undefined, lang = "en") => {
-  if (param) return param.get(lang as LanguageCode);
+  try {
+    if (param) return param.get(lang as LanguageCode);
+  } catch (error) {
+    return "";
+  }
 };
 
 function mapSkills(skills: Skill[]): any[] {
